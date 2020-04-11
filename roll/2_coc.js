@@ -52,7 +52,7 @@ rollDiceCommand = function (inputStr, mainMsg, groupid, userid, userrole, botnam
 	//DevelopmentPhase幕間成長指令開始於此
 	if ((trigger == '.dp' || trigger == '成長檢定' || trigger == '幕間成長') && mainMsg[1] <= 1000) return DevelopmentPhase(mainMsg[1], mainMsg[2]);
 	//cc指令開始於此
-	if (trigger == 'cc' && mainMsg[1] <= 1000) return coc7(mainMsg[1], mainMsg[2]);
+	if (trigger == 'test' && mainMsg[1] <= 1000) return coc7(mainMsg[1], mainMsg[2]);
 	//獎懲骰設定於此	
 	if (trigger == 'cc1' && mainMsg[1] <= 1000) return coc7bp(mainMsg[1], '1', mainMsg[2]);
 	if (trigger == 'cc2' && mainMsg[1] <= 1000) return coc7bp(mainMsg[1], '2', mainMsg[2]);
